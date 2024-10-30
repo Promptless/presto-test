@@ -1,3 +1,4 @@
+```
 =============
 Release 0.289
 =============
@@ -43,6 +44,7 @@ __________________
 * Add CTE materialization for Presto C++ workers with the configuration properties ``hive.temporary-table-storage-format`` (``DWRF`` or ``PARQUET`` only) and ``hive.temporary-table-compression-codec`` (``ZSTD`` or ``NONE`` only). :pr:`22780`
 * Add support for persisting full memory cache to SSD periodically on Presto C++ worker. This can be enabled by setting ``cache.velox.full-persistence-interval`` to a non-zero value. :pr:`23192`
 * Fix queries that contain timestamp with timezone to fail to avoid correctness issues. :pr:`23200`
+* Add session property ``native_writer_flush_threshold_bytes`` to set the minimum memory size for flushing buffered data to disk during native execution. :pr:`23891`
 
 JDBC Changes
 ____________
@@ -96,3 +98,4 @@ ___________
 ===========
 
 Abe Varghese, Abhisek Saikia, Ajay George, Amit Dutta, Andrii Rosa, Anil Gupta Somisetty, Arjun Gupta, Auden Woolfson, Bikramjeet Vig, Christian Zentgraf, Deepak Majeti, Denodo Research Labs, Devesh Agrawal, Elliotte Rusty Harold, Emanuel F., Feilong Liu, Gary Helmling, Ge Gao, Jacob Khaliqi, Jalpreet Singh Nanda (:imjalpreet), Jialiang Tan, Jimmy Lu, Karteekmurthys, Ke, Kevin Wilfong, Krishna Pai, Linsong Wang, Mahadevuni Naveen Kumar, Matt Calder, Miguel Blanco Godón, Nikhil Collooru, Pramod Satya, Pratik Joseph Dabre, Ramesh Kanna S, Rebecca Schlussel, Reetika Agrawal, Sergey Pershin, Sreeni Viswanadha, Steve Burnett, Swapnil Tailor, Tim Meehan, Wills Feng, Yihong Wang, Zac Blanco, Zac Wen, Zuyu ZHANG, abhinavmuk04, aditi-pandit, cvarelad-denodo, jaystarshot, misterjpapa, oyeliseiev-ua, prithvip, wangd, wypb, xiaoxmeng, yingsu00, ymmarissa
+```
