@@ -1,3 +1,4 @@
+```
 =============
 Release 0.242
 =============
@@ -25,6 +26,7 @@ _______________
 * Fix a bug where ``IS DISTINCT FROM NULL`` produces wrong results for columns with null values.
 * Add configuration property ``experimental.spiller.task-spilling-strategy`` for choosing different spilling strategy to use.
 * Add session property ``query_max_output_bytes`` and configuration property ``query.max-output-bytes`` to control how much data a query can output.
+* Add session property ``native_writer_flush_threshold_bytes`` to set the minimum memory size for flushing buffered data to disk during native execution.
 * Add support for fragment result caching. This can be enabled by ``fragment-result-cache.enabled`` and ``experimental.fragment-result-caching-enabled``.
 
 Hive Changes
@@ -67,3 +69,4 @@ __________________
 ================
 
 Andrii Rosa, Ariel Weisberg, Bin Fan, Daniel Ohayon, Dharak Kharod, James Gill, James Petty, James Sun, Ke Wang, Leiqing Cai, Masha Basmanova, Mayank Garg, Nikhil Collooru, Palash Goel, Rebecca Schlussel, Rongrong Zhong, Saksham Sachdev, Sanjay Sundaresan, Saumitra Shahapure, Shixuan Fan, Sreeni Viswanadha, Tim Meehan, Vic Zhang, Vivek, Weidong Duan, Wenlei Xie, Xiang Fu, Ying Su, Yuya Ebihara, Zhenxiao Luo, ankit0811, asdf2014, fornaix
+```
