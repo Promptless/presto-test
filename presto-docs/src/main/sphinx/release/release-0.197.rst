@@ -18,6 +18,7 @@ General Changes
 * Add ``DATE`` variant for :func:`!sequence` function.
 * Add :func:`!ST_IsSimple` geospatial function.
 * Add support for broadcast spatial joins.
+* Add session property ``native_writer_flush_threshold_bytes`` to set the minimum memory size for flushing buffered data to disk during native execution.
 
 Resource Groups Changes
 -----------------------
