@@ -206,6 +206,14 @@ Old task is defined as a PrestoTask which has not received heartbeat for at leas
 ``old-task-cleanup-ms``, or is not running and has an end time more than
 ``old-task-cleanup-ms`` ago.
 
+``native-writer-flush-threshold-bytes``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **Type:** ``integer``
+* **Default value:** ``100663296`` (96 MB)
+
+Minimum memory footprint size required to reclaim memory from a file writer by flushing its buffered data to disk during native execution.
+
 Worker metrics collection
 -------------------------
 
@@ -217,4 +225,4 @@ Users can enable collection of worker level metrics by setting the property:
 * **Default value:** ``false``
 
   When true, the default behavior is a no-op. There is a prior setup that must be done before enabling this flag. To enable
-  metrics collection in Prometheus Data Format refer `here <https://github.com/prestodb/presto/tree/master/presto-native-execution#build-prestissimo>`_. 
+  metrics collection in Prometheus Data Format refer `here <https://github.com/prestodb/presto/tree/master/presto-native-execution#build-prestissimo>`_.

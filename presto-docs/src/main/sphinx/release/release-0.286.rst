@@ -1,3 +1,4 @@
+```
 =============
 Release 0.286
 =============
@@ -43,6 +44,7 @@ _______________
 * Pass extra credentials such as CAT tokens for definer mode in views. :pr:`21685`
 * Add function ``map_top_n_keys_by_value`` which returns top ``n`` keys of a map by value. :pr:`21259`
 * Add support for materialization of Common Table Expressions (CTEs) in queries. The underlying connectors must support creating temporary tables, a functionality presently exclusive to the Hive connector. :pr:`20887`
+* Add session property ``native_writer_flush_threshold_bytes`` to set the minimum memory size for flushing buffered data to disk during native execution. :pr:`23891`
 
 SPI Changes
 ___________
@@ -82,3 +84,4 @@ _________________________
 ===========
 
 8dukongjian, AbhijitKulkarni1, Aditi Pandit, Ajay George, Ajay Gupte, Amit Dutta, Anant Aneja, Andrii Rosa, Anil Gupta Somisetty, Antoine Pultier, Arjun Gupta, Avinash Jain, Beinan, Bikramjeet Vig, Changli Liu, Christian Zentgraf, Chunxu Tang, Deepak Majeti, Diana Meehan, Facebook Community Bot, Ge Gao, Jalpreet Singh Nanda (:imjalpreet), Jason Fine, Jialiang Tan, Jimmy Lu, Jonathan Hehir, Junhao Liu, Ke, Kevin Wilfong, Krishna Pai, Linsong Wang, Luis Paolini, Lyublena Antova, Mahadevuni Naveen Kumar, Masha Basmanova, Matthew Peveler, Michael Shang, Nikhil Collooru, Nilay Pochhi, Patrick Stuedi, Paul Meng, Pedro Pedreira, Pramod, Pranjal Shankhdhar, Pratik Joseph Dabre, Reetika Agrawal, Richard Barnes, Rohit Jain, Sagar Sumit, Sergey Pershin, Sergii Druzkin, Shrinidhi Joshi, Steve Burnett, Sudheesh, Tai Le, Tim Meehan, TommyLemon, Vigneshwar Selvaraj, VishnuSanal, Vivek, Yihong Wang, Ying, Zac, Zac Blanco, Zhenxiao Luo, abhiseksaikia, feilong-liu, hainenber, jaystarshot, karteekmurthys, kedia,Akanksha, kiersten-stokes, mohsaka, pratyakshsharma, prithvip, renurajagop, rui-mo, shenhong, wangd, wypb, xiaoxmeng, xumingming
+```

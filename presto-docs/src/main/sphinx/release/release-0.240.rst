@@ -27,6 +27,7 @@ _______________
 * Use local private credentials (json key file) to refresh GCS access token. Usage : presto-cli --extra-credential hive.gcs.credentials.path="${PRIVATE_KEY_JSON_PATH}".
 * Add ability to spill window functions to local disk when a worker is out of memory.
 * Add support for limit pushdown through union.
+* Add ``native_writer_flush_threshold_bytes`` session property to set the minimum memory size for flushing buffered data to disk during native execution.
 
 Thrift Connector Changes
 ________________________

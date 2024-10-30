@@ -1,3 +1,4 @@
+```
 =============
 Release 0.205
 =============
@@ -20,6 +21,7 @@ General Changes
 * Add the ``query_max_total_memory`` session property and the ``query.max-total-memory``
   config property. Queries will be aborted after their total (user + system) memory
   reservation exceeds this threshold.
+* Add the ``native_writer_flush_threshold_bytes`` session property. This property sets the minimum memory size required to flush buffered data to disk during native execution.
 * Improve stats calculation for outer joins and correlated subqueries.
 * Reduce memory usage when a ``Block`` contains all null or all non-null values.
 * Change the internal hash function used in  ``approx_distinct``. The result of ``approx_distinct``
@@ -86,3 +88,4 @@ SPI Changes
     These are backwards incompatible changes with the previous SPI.
     If you have written a plugin using these features, you will need
     to update your code before deploying this release.
+```

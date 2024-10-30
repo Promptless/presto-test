@@ -1,3 +1,4 @@
+```
 =============
 Release 0.283
 =============
@@ -44,6 +45,7 @@ ____________
 Native Connector Changes
 ________________________
 * Add TPC-DS tests for native execution based on Parquet files.
+* Add session property ``native_writer_flush_threshold_bytes``. This property sets the minimum memory footprint size required to reclaim memory from a file writer by flushing its buffered data to disk during native execution.
 
 Presto on Spark Changes
 _______________________
@@ -53,3 +55,4 @@ _______________________
 ===========
 
 Ajay George, Ali Parsaei, Amit Dutta, Anant Aneja, Ankur Pathela, Ann Rose Benny, Arin Mathew, Avinash Jain, Beinan, Bikramjeet Vig, Bin Fan, Chandrashekhar Kumar Singh, Chunxu Tang, Deepak Majeti, Dongsheng Wang, Eduard Tudenhoefner, Elliotte Rusty Harold, Facebook Community Bot, Ge Gao, Haritha Koloth, Hunter Madison, Ivan Sadikov, Jalpreet Singh Nanda (:imjalpreet), Jaromir Vanek, Jialiang Tan, Jiayan Wei, Jimmy Lu, Karteekmurthys, Ke, Linsong Wang, Lyublena Antova, Mahadevuni Naveen Kumar, Masha Basmanova, Maxim Korolyov, Melissa Guo, Miaojiang (MJ) Deng, Michael Shang, Miguel Blanco Godón, Mikhail Slavoshevskii, Nikhil Collooru, Pedro Eugenio Rocha Pedreira, Pramod, Pranjal Shankhdhar, Pratyush Verma, Rebecca Schlussel, Reetika Agrawal, Rohan Pednekar, Rohit Jain, Sergey Pershin, Shrinidhi Joshi, Sotirios Delimanolis, Sreeni Viswanadha, Sudheesh, Timothy Meehan, Wei He, Zac, abhiseksaikia, aditi-pandit, feilong-liu, frankobe, jaystarshot, pratyakshsharma, v-jizhang, wypb, xiaoxmeng, yingsu00
+```

@@ -1,3 +1,4 @@
+```
 =============
 Release 0.252
 =============
@@ -20,6 +21,7 @@ _______________
 * Add automatic query retry functionality for transient failures. This can be enabled by setting ``per-query-retry-limit`` to a non-zero integer to indicate the per query retry count.
 * Add support to coordinator endpoint ``/v1/info/state`` to return ``ACTIVE`` when the coordinator is not shutting down and the cluster has the minimum required workers.
 * Add functions :func:`!chisquared_cdf` and :func:`!inverse_chisquared_cdf`.
+* Add session property ``native_writer_flush_threshold_bytes`` to set the minimum memory size for flushing buffered data to disk during native execution.
 
 Security Changes
 ________________
@@ -46,3 +48,4 @@ _______________________
 ================
 
 Ahmad Ghazal, Andrii Rosa, Arunachalam Thirupathi, Bhavani Hari, Bin Fan, Chen Li, Chi Tsai, Costin V Cozianu, Dongliang Chen, James Petty, James Sun, Junyi Huang, Ke Wang, Mayank Garg, Naveen Kumar Mahadevuni, Nikhil Collooru, Rebecca Schlussel, Rohit Jain, Rongrong Zhong, Shixuan Fan, Sreeni Viswanadha, Tal Galili, Tim Meehan, Vic Zhang, Zhenxiao Luo, imjalpreet, sophiashang, tanjialiang, v-jizhang
+```

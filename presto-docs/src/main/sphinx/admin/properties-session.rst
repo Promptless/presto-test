@@ -177,6 +177,16 @@ Limit for memory used for unspilling a single aggregation operator instance.
 
 The corresponding configuration property is :ref:`admin/properties:\`\`experimental.aggregation-operator-unspill-memory-limit\`\``. 
 
+``native_writer_flush_threshold_bytes``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **Type:** ``data size``
+* **Default value:** ``96 MB``
+
+Native Execution only. Minimum memory footprint size required to reclaim memory from a file writer by flushing its buffered data to disk.
+
+The corresponding configuration property is :ref:`admin/properties:\`\`native-writer-flush-threshold-bytes\`\``. 
+
 Task Properties
 ---------------
 

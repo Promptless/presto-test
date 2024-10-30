@@ -1,3 +1,4 @@
+```
 =============
 Release 0.274
 =============
@@ -19,6 +20,7 @@ _______________
 * Add support for constraint optimizations to improve performance for querying catalogs that supports table constraints. This feature can be turned on by setting the session property ``exploit_constraints`` or config property ``optimizer.exploit-constraints`` to ``true``.
 * Add support for local mode on ``/v1/cluster/`` to get information on locally running/queued queries. Can be enabled with the ``includeLocalInfoOnly`` property.
 * When cost-based optimizer fails, consider source table size when choosing join order and join distribution type. This might improve query plan for queries with complex projections on small tables. This optimization can be disabled by setting session property ``size_based_join_distribution_type`` to ``false``.
+* Add session property ``native_writer_flush_threshold_bytes`` to set the minimum memory size for flushing buffered data to disk during native execution.
 
 SPI Changes
 ___________
@@ -52,3 +54,4 @@ _____________
 ===========
 
 Ajay George, Amit Adhikari, Amit Dutta, Andy Li, Arjun Gupta, Arunachalam Thirupathi, Beinan, Chunxu Tang, David Simmen, Dongsheng Wang, Eduard Tudenhoefner, Eric Kwok, Guy Moore, Harleen Kaur, Harsha Rastogi, James Sun, Jaromir Vanek, Jonathan Hehir, Ke Wang, Lin Liu, Maria Basmanova, Michael Shang, Nikhil Collooru, Patrick Sullivan, Pranjal Shankhdhar, Rebecca Schlussel, Reetika Agrawal, Rongrong Zhong, Sergey Pershin, Sergii Druzkin, Swapnil Tailor, Tim Meehan, Todd Gao, Xiang Fu, Xiaoman Dong, Xinli shang, Zac, Zhenxiao Luo, abhiseksaikia, ericyuliu, junyi1313, maswin, prithvip, v-jizhang, vaishnavibatni, vigneshwarselvaraj, xiaoxmeng, zhangyanbing
+```

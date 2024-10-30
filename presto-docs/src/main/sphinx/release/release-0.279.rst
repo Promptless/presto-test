@@ -1,3 +1,4 @@
+```
 =============
 Release 0.279
 =============
@@ -22,6 +23,7 @@ _______________
 * Extend functions :func:`!array_frequency`, :func:`!array_duplicates`, :func:`!array_has_duplicates`, :func:`!array_intersect(array(array(E))` to accept any type as input instead of only varchar/double.
 * Add ``CONTROL`` as a new ``QueryType``. The ``CONTROL`` queryType represents statements of session control and transaction control types.
 * Remove two unused session parameters - ``hash_based_distinct_limit_enabled`` and ``hash_based_distinct_limit_threshold`` and the corresponding implementation in favor of the ``quick_distinct_limit_enabled`` feature.
+* Add session property ``native_writer_flush_threshold_bytes`` to set the minimum memory size for flushing buffered data to disk during native execution.
 
 Elasticsearch Connector Changes
 _______________________________
@@ -65,3 +67,4 @@ ___________
 ===========
 
 Aditi Pandit, Alex Chen, Amit Dutta, Anant Aneja, Arjun Gupta, Arunachalam Thirupathi, Asjad Syed, Avinash Jain, Beinan, Christopher Graves, Deepak Majeti, Devesh Agrawal, Eduard Tudenhoefner, Feilong Liu, Ge Gao, George Wang, Guy Moore, Hope Wang, James Petty, James Sun, Jaromir Vanek, Jingmei Huang, Jon Janzen, Josh Soref, JoshuaTang, Karteek Murthy Samba Murthy, Krishna Pai, Linkiewicz, Milosz, Linsong Wang, Lyublena Antova, MJ Deng, Masha Basmanova, Michael Shang, Nizar Hejazi, Pramod, Pranjal Shankhdhar, Pratyaksh Sharma, Pratyush Verma, Rebecca Schlussel, Reetika Agrawal, Rohit Jain, Sacha Viscaino, Sergey Pershin, Sergii Druzkin, Sreeni Viswanadha, Swapnil Tailor, Timothy Meehan, Vivek, Ying, Zac, Zhenxiao Luo, abhiseksaikia, ajantha-bhat, dnnanuti, dnskr, pen4, singcha, suheng, tanjialiang, v-jizhang, wangd, xiaoxmeng
+```

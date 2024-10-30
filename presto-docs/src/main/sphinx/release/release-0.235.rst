@@ -1,3 +1,4 @@
+```
 =============
 Release 0.235
 =============
@@ -18,6 +19,7 @@ _______________
 * Add :func:`!myanmar_font_encoding` and :func:`!myanmar_normalize_unicode` to support working with Burmese text
 * Add support for :func:`!ST_AsText` to accept Spherical Geographies.
 * Add support for :func:`!ST_Centroid` to accept Spherical Geography Points and MultiPoints.
+* Add session property ``native_writer_flush_threshold_bytes`` to set the minimum memory size for flushing buffered data to disk during native execution.
 
 Pinot Connector Changes
 _______________________
@@ -54,3 +56,4 @@ ________________
 * Add support for specifying table properties override for temporary Verifier tables, through configuration property ``control.table-properties`` and ``test.table-properties``.
 * Add support to output verification results for failures due to Verifier internal errors.
 * Add support to skip teardown queries in case control and test queries succeeds but verification fails. This can be enabled by configuration property ``smart-teardown``, which replaces ``run-teardown-on-result-mismatch``.
+```
