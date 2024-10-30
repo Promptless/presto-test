@@ -407,6 +407,16 @@ Temp storage used by spiller when ``experimental.spiller.single-stream-spiller-c
 
 Size of buffer when ``experimental.spiller.single-stream-spiller-choice`` is set to TEMP_STORAGE
 
+``native_writer_flush_threshold_bytes``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **Type:** ``data size``
+* **Default value:** ``96MB``
+
+Minimum memory footprint size required to reclaim memory from a file writer by flushing its buffered data to disk during native execution.
+
+The corresponding session property is :ref:`admin/properties-session:\`\`native_writer_flush_threshold_bytes\`\``. 
+
 Exchange Properties
 -------------------
 
