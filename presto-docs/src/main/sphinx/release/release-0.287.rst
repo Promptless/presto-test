@@ -1,3 +1,4 @@
+```
 =============
 Release 0.287
 =============
@@ -47,6 +48,7 @@ _______________
 * Remove ``native_execution_enabled``, ``native_execution_executable_path`` and ``native_execution_program_arguments`` session properties. Corresponding configuration properties are still available. :pr:`22183`
 * Remove the configuration property ``use-legacy-scheduler`` and the corresponding session property ``use_legacy_scheduler``.   The property previously defaulted to true, and the new scheduler, which was intended to replace it eventually, was never productionized and is no longer needed. The configuration property ``max-stage-retries`` and the session property ``max_stage_retries`` have also been removed. :pr:`21952`
 * Upgrade Alluxio to 312. :pr:`22452`
+* Add session property ``native_writer_flush_threshold_bytes`` to set the minimum memory size for flushing buffered data to disk during native execution. :pr:`23891`
 
 Security Changes
 ________________
@@ -94,3 +96,4 @@ _______________________
 ===========
 
 8dukongjian, Ajay George, Amit Dutta, Anant Aneja, Andrii Rosa, Athmaja N, Avinash Jain, Bikramjeet Vig, Christian Zentgraf, Deepa George, Deepak Majeti, Eduard Tudenhoefner, Elliotte Rusty Harold, Emanuel F, Fazal Majid, Jalpreet Singh Nanda (:imjalpreet), Jialiang Tan, Jimmy Lu, Jonathan Hehir, Karteekmurthys, Ke, Kevin Wilfong, Konjac Huang, Lyublena Antova, Masha Basmanova, Mohan Dhar, Nikhil Collooru, Pranjal Shankhdhar, Pratik Joseph Dabre, Rebecca Schlussel, Reetika Agrawal, Rohit Jain, Sanika Babtiwale, Sergey Pershin, Sergii Druzkin, Sreeni Viswanadha, Steve Burnett, Sudheesh, Swapnil Tailor, Tai Le Manh, Timothy Meehan, Todd Gao, Vivek, Will, Yihong Wang, Ying, Zac Blanco, Zac Wen, Zhenxiao Luo, aditi-pandit, dnskr, feilong-liu, hainenber, ico01, jaystarshot, kedia,Akanksha, kiersten-stokes, polaris6, pratyakshsharma, s-akhtar-baig, sabbasani, wangd, wypb, xiaodou, xiaoxmeng
+```
