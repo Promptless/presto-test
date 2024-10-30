@@ -1,3 +1,4 @@
+```
 =============
 Release 0.288
 =============
@@ -54,6 +55,7 @@ _______________
 * Add support for non default keystore and truststore type in presto CLI and JDBC. :pr:`22556`
 * Add support for querying system.runtime.tasks table in Presto C++ clusters. :pr:`21416`
 * Add two system configuration properties to specify the reserved query memory capacity on Presto C++ clusters: ``query-reserved-memory-gb`` is the total amount of memory in GB reserved for the queries on a worker node. ``memory-pool-reserved-capacity`` is the amount of memory in bytes reserved for each query. :pr:`22593`
+* Add session property: 'native_writer_flush_threshold_bytes'. This property sets the minimum memory size for flushing buffered data to disk during native execution. :pr:`23891`
 * Replace the Presto native stats definition and reporting for the memory allocator, in-memory cache and ssd cache metrics from Presto repo to Velox repo, with the metrics names changing from presto_cpp.<metrics_name> to velox.<metrics_name>. :pr:`22751`
 * Remove deprecated feature and configuration property ``deprecated.group-by-uses-equal``, which allowed group by to use equal to rather than distinct semantics. :pr:`22888`
 * Upgrade CI pipeline to build and publish Presto C++ worker docker image. :pr:`22806`
@@ -93,3 +95,4 @@ ___________
 ===========
 
 8dukongjian, Abhisek Saikia, Ajay Gupte, Amit Dutta, Andrii Rosa, Beinan Wang, Christian Zentgraf, Deepak Majeti, Denodo Research Labs, Elliotte Rusty Harold, Emanuel F, Fazal Majid, Feilong Liu, Ge Gao, Jalpreet Singh Nanda (:imjalpreet), Jialiang Tan, Jimmy Lu, Jonathan Hehir, Karteekmurthys, Ke, Kevin Wilfong, Konjac Huang, Linsong Wang, Michael Shang, Neerad Somanchi, Nidhin Varghese, Nikhil Collooru, Pranjal Shankhdhar, Rebecca Schlussel, Reetika Agrawal, Rohit Jain, Sean Yeh, Sergey Pershin, Sergii Druzkin, Sreeni Viswanadha, Steve Burnett, Swapnil Tailor, Tishyaa Chaudhry, Vivek, Vivian Hsu, Wills Feng, Yedidya Feldblum, Yihao Zhou, Yihong Wang, Ying Su, Zac Blanco, Zac Wen, abhinavmuk04, aditi-pandit, deepthydavis, jackychen718, jaystarshot, kiersten-stokes, wangd, wypb, xiaoxmeng, ymmarissa
+```
