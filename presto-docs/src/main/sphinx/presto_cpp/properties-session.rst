@@ -14,7 +14,7 @@ The following are the native session properties for C++ based Presto.
 * **Default value:** ``1000``
 
 Native Execution only. Defines the maximum CPU time in milliseconds that a driver thread
-is permitted to run before it must yield to other threads,facilitating fair CPU usage across
+is permitted to run before it must yield to other threads, facilitating fair CPU usage across
 multiple threads.
 
 A positive value enforces this limit, ensuring threads do not monopolize CPU resources.
@@ -98,7 +98,7 @@ If set to ``true``, disables the optimization in expression evaluation to delay 
 This should only be used for debugging purposes.
 
 ``native_selective_nimble_reader_enabled``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * **Type:** ``boolean``
 * **Default value:** ``false``
@@ -179,7 +179,7 @@ Native Execution only. Enable row number spilling on native engine.
 Native Execution only. Enable simplified path in expression evaluation.
 
 ``native_expression_max_array_size_in_reduce``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * **Type:** ``integer``
 * **Default value:** ``100000``
@@ -209,7 +209,7 @@ The format and options of these parameters are determined by the capabilities of
 and may include settings such as file location, size limits, and file system-specific optimizations.
 
 ``native_spill_write_buffer_size``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * **Type:** ``bigint``
 * **Default value:** ``1048576``
@@ -240,6 +240,14 @@ Native Execution only. Enable window spilling on native engine.
 * **Default value:** ``true``
 
 Native Execution only. Enable writer spilling on native engine.
+
+``native_writer_flush_threshold_bytes``
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **Type:** ``bigint``
+* **Default value:** ``100663296``
+
+Native Execution only. Minimum memory footprint size required to reclaim memory from a file writer by flushing its buffered data to disk.
 
 ``native_max_output_buffer_size``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
