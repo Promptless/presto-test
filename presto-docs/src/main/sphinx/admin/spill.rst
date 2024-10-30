@@ -1,3 +1,4 @@
+```
 =============
 Spill to Disk
 =============
@@ -168,3 +169,9 @@ Order Bys
 Order by can use a lot of memory when there are many rows that need to be sorted.
 When spill-to-disk is enabled, if there is not enough memory, then sorted rows are written
 to disk and then later merged back together in memory.
+
+Native Writer Flush Threshold
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A new session property, ``native_writer_flush_threshold_bytes``, has been introduced. This property is specific to Native Execution and sets the minimum memory footprint size required to reclaim memory from a file writer by flushing its buffered data to disk. The default value is 96 MB. This property can be useful in managing memory usage during native execution by controlling when data is flushed to disk.
+```
