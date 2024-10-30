@@ -1,3 +1,4 @@
+```
 =============
 Release 0.219
 =============
@@ -22,6 +23,10 @@ General Changes
 * Add a warning for using the ``current_role`` reserved word as an identifier.
 * Add support for using the empty string as a delimiter for the :func:`!split` function.
   When an empty string is used as the delimiter, the string will be split into individual characters.
+
+Session Changes
+---------------
+* Add session property: ``native_writer_flush_threshold_bytes``. This property is used in Native Execution to set the minimum memory footprint size required to reclaim memory from a file writer by flushing its buffered data to disk.
 
 Raptor Changes
 --------------
@@ -66,3 +71,4 @@ Verifier Changes
 SPI Changes
 -----------
 * Expose ``RowExpression`` to SPI, to allow passing resolved expressions to connectors.
+```
